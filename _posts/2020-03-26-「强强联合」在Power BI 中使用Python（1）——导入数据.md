@@ -191,7 +191,7 @@ df2 = pd.DataFrame(
 
 
 
-OK！这样我们就成功用Python来导入数据了。
+OK！这样我们就成功地用Python来导入数据了。
 
 
 

@@ -21,7 +21,7 @@ RSS: false
 # weibo_username:     xueqiandata
 zhihu_username:     xueqiandata
 github_username:    xueqiandata
-#twitter_username:   qiubaiying
+#twitter_username:   xueqiandata
 
 
 
@@ -97,11 +97,11 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
+        title: "公众号·学谦",
+        href: "https://mp.weixin.qq.com/s/OrDqdlriIMkNZ_GzYUS92w"
     },{
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
+        title: "知乎·学谦",
+        href: "https://www.zhihu.com/people/xueqiandata"
     },{
         title: "Apple",
         href: "https://apple.com"

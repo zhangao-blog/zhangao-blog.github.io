@@ -12,7 +12,7 @@ github_repo: "https://github.com/xueqiandata/xueqiandata.github.io.git" # you co
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "满招损，谦受益！"
-sidebar-avatar: /img/about-学谦.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/about-学谦.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

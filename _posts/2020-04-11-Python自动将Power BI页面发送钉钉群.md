@@ -1,5 +1,3 @@
-
-
 前文说过，在很多个惬意的下午，我每每爽歪歪地喝着咖啡，看着Power BI每秒钟刷新一次，静静等待某个分公司完成本月绩效任务，自动调用Python在钉钉群中发送喜报：
 
 ![img](https://tva1.sinaimg.cn/large/007S8ZIlly1gdq52a63ugj30gu0kc3z6.jpg)

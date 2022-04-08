@@ -59,18 +59,18 @@ pip install pymssql
 
 点开高级编辑器：
 
-let    
+`let    
     源 = Sql.Database("DESKTOP-NLIOB2L\MSSQLSERVER1", "test1"),    
-    dbo_Sheet1 = 源{[Schema="dbo",Item="Sheet1"]}[Data]
-in    dbo_Sheet1
+    dbo_Sheet1 = 源{[Schema="dbo",Item="Sheet1"]}[Data]`
+`in    dbo_Sheet1`
 
 
 
 将以上代码适当进行修改：
 
-let    
-    源 = Sql.Database("DESKTOP-NLIOB2L\MSSQLSERVER1", "test1",[Query="select * from Sheet1"])
-in    源
+`let    
+    源 = Sql.Database("DESKTOP-NLIOB2L\MSSQLSERVER1", "test1",[Query="select * from Sheet1"])`
+`in    源`
 
 
 
@@ -140,12 +140,12 @@ in    insert
 
 我们再来试试Value.NativeQuery方法，是将一条record记录数据直接插入数据库中：
 
-Value.NativeQuery
-        (
+`Value.N`ativeQuery`
+        `(`
         Sql.Database("DESKTOP-NLIOB2L\MSSQLSERVER1", "test1"),            
         "INSERT INTO Sheet1 VALUES(@KeyValue,@NumberValue,@DateValue)",            
         [KeyValue="NativeQuery",NumberValue=3,DateValue="2019/1/1"]        
-        )
+        )`
 
 运行结果：
 
@@ -171,15 +171,15 @@ Value.NativeQuery
 
 第二步：我们再做一个循环，逐行读取这些records，并用Value.NativeQuery函数套在这些records上：
 
-insert=
-  List.Transform(records,(x)=>
-    Value.NativeQuery
-            (            
+`i`nsert=`
+  `List.Transform(records,(x)=>`
+    `Value.NativeQuery`
+            `(            
             Sql.Database("DESKTOP-NLIOB2L\MSSQLSERVER1", "test1"),            
             "INSERT INTO Sheet1 VALUES(@KeyValue,@NumberValue,@DateValue)",            
             x        
-            )
-  )
+            )`
+  )`
 
 
 

@@ -158,24 +158,24 @@ M语言中调用Python的主要函数是 Python.Execute，大家可以看看其�
 
 运行Python脚本后，Power BI会提取所有数据类型为DataFrame的变量出来，我们上面只有一个变量df，我们改下代码来看看，直接拷贝第一个变量，然后改下2个变量的名字：
 
-import pandas as pd
-import numpy as np
+`import pandas as pd`
+`import numpy as np`
 
-df1 = pd.DataFrame(
-    {
-        'key1': list('aabba'),
-        'key2': ['one', 'two', 'one', 'two', 'one'],
-        'data1': np.random.randn(5),
-        'data2': np.random.randn(5)
-    });
+`df1 = pd.DataFrame(`
+    `{`
+        `'key1': list('aabba'),`
+        `'key2': ['one', 'two', 'one', 'two', 'one'],`
+        `'data1': np.random.randn(5),`
+        `'data2': np.random.randn(5)`
+    `});`
 
-df2 = pd.DataFrame(
-    {
-        'key1': list('aabba'),
-        'key2': ['one', 'two', 'one', 'two', 'one'],
-        'data1': np.random.randn(5),
-        'data2': np.random.randn(5)
-    });
+`df2 = pd.DataFrame(`
+    `{`
+        `'key1': list('aabba'),`
+        `'key2': ['one', 'two', 'one', 'two', 'one'],`
+        `'data1': np.random.randn(5),`
+        `'data2': np.random.randn(5)`
+    `});`
 
 
 

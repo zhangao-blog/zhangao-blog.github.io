@@ -102,7 +102,7 @@ pip install pymssql
 
 `let    
     Source = Excel.CurrentWorkbook(){[Name="表1"]}[Content],    
-    ChangedType = Table.TransformColumnTypes(Source,{{"KeyValue", type text}, {"NumberValue", Int64.Type}, {"DateValue", type date}}),    
+    ChangedType = Table.TransformColumnTypes(Source,\{\{"KeyValue", type text}, {"NumberValue", Int64.Type}, {"DateValue", type date}}),    
     insert=Sql.Database("DESKTOP-NLIOB2L\MSSQLSERVER1", "test1",[Query="INSERT INTO Sheet1(KeyValue,NumberValue,DateValue)VALUES('A',3,'2019/1/1')"])`
 `in    insert`
 

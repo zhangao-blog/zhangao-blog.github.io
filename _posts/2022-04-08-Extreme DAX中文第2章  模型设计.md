@@ -1,3 +1,13 @@
+---
+layout:     post
+header-img: img/post-bg-extremedax.jpg
+catalog: true
+tags:
+    - Extreme DAX
+---
+
+
+
 # 第2章 模型设计
 
 设计优良的分析模型是 DAX 高效运行的前提。在本章中，我们将讨论许多与建模有关的主题，这些主题对于理解性能强劲的模型设计非常重要。

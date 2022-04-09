@@ -1,6 +1,6 @@
 ---
 layout:     post
-header-img: img/post-bg-extremedax.png
+header-img: img/post-bg-extremedax.jpg
 catalog: true
 tags:
     - Extreme DAX

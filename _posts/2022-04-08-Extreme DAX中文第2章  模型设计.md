@@ -28,7 +28,7 @@ RDBMS 技术经过长期的优化与迭代更新，目前已经非常成熟。�
 
 图2.1对此过程进行了可视化说明：按行存储数据（由数字标识）无法有效地检索需要列的所有值。
 
-![clip_image002](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image002.jpg)
+![image-20220409173433238](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173433238.png)
 
 图2.1 从基于行的存储中检索列的值效率低下
 
@@ -88,7 +88,7 @@ Power BI 模型中一个最容易被误解的元素是关系的概念。当你�
 
 例如，图2.2显示了某个存储在 Excel 工作表中的数据。
 
-![image-20220409152022413](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409152022413.png)
+![image-20220409173445145](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173445145.png)
 
 图2.2 Excel中的表格
 
@@ -110,7 +110,7 @@ Power BI 模型中一个最容易被误解的元素是关系的概念。当你�
 
 在关系型数据库或 RDBMS 中，数据被分隔到多个表中。通常，这些表通常是关于那些组织的实体（如客户、员工、产品等）。表中的每一行都有一个标识符或**键**（key），可以实现固定地引用其他表中的行；例如，在图2.3所示的销售订单表中，可以只包含客户和产品的键，而无需包含所涉及的客户和产品的所有属性。
 
-![图示  描述已自动生成](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image006.jpg)
+![image-20220409173458101](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173458101.png)
 
 图2.3 关系型数据库中的关系
 
@@ -124,7 +124,7 @@ Power BI 模型中关系的基础是具有唯一键的数据表。具有相同�
 
 在如图2.4所示的Power BI Desktop中的结构里，我们可以在模型视图中查看 Power BI 模型的结构以及其中的表和关系。
 
-![图形用户界面, 图示  描述已自动生成](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image008.jpg)
+![image-20220409173509317](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173509317.png)
 
 图2.4 Power BI 模型中两个表之间的关系
 
@@ -132,7 +132,7 @@ Power BI 模型中的关系与关系型数据库中的关系之间存在两个�
 
 如图2.5所示，模型会将每个未知的外键的值连接到一个空白行。模型中不会显示这个空白行，但是在报表中会显示。
 
-![image-20220409152044654](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409152044654.png)
+![image-20220409173516156](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173516156.png)
 
 图2.5 未知值与空白行相对应
 
@@ -154,13 +154,13 @@ Power BI和关系型数据库中的关系之间，还有另一个重要区别是
 
 图2.6展示了继续添加两个关系之后的模型视图：分别在 fSales[Delivery date] 与 Calendar[Date] 两列之间和 fSales[Payment date] 与 Calendar[Date] 两列之间建立关系。
 
-![image-20220409152056258](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409152056258.png)
+![image-20220409173705790](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173705790.png)
 
 图2.6 一个活动关系和两个非活动关系
 
 在某个特定的计算中，可以使用 USERELATIONSHIP 函数来激活非活动关系，同时原有的活动关系在该计算中暂时失效。
 
-| ![卡通人物  描述已自动生成](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image013.jpg) | 注意：在包含主键的表上定义行级别安全性  （row-level security，RLS） 时，使用 USERELATIONSHIP 函数来激活关系将导致 DAX 计算中出现错误。原因是，同任何其他筛选器一样，安全筛选器是通过关系传递的。停用传递安全筛选器的关系并激活另一个关系会导致对应选择的内容产生歧义。  因此，在设计模型时要小心谨慎，同时对未来可能需要的安全要求做到心中有数。还有一个建议是：不要过度使用非活跃关系。有关模型安全的深入探讨，请查看本书第5章 “DAX 中的安全性”。 |
+| ![image-20220409173724759](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173724759.png) | 注意：在包含主键的表上定义行级别安全性  （row-level security，RLS） 时，使用 USERELATIONSHIP 函数来激活关系将导致 DAX 计算中出现错误。原因是，同任何其他筛选器一样，安全筛选器是通过关系传递的。停用传递安全筛选器的关系并激活另一个关系会导致对应选择的内容产生歧义。  因此，在设计模型时要小心谨慎，同时对未来可能需要的安全要求做到心中有数。还有一个建议是：不要过度使用非活跃关系。有关模型安全的深入探讨，请查看本书第5章 “DAX 中的安全性”。 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
  
@@ -169,7 +169,7 @@ Power BI和关系型数据库中的关系之间，还有另一个重要区别是
 
 通过关系进行的筛选器传递通常仅从主表（primary table）到外表（foreign table）。如图2.7所示，在模型视图中，筛选器传递或者交叉筛选（cross filter）的方向通过关系线中间的小箭头显示。
 
-![image-20220409152126666](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409152126666.png)
+![image-20220409173718138](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173718138.png)
 
 图2.7 关系的交叉筛选方向
 
@@ -177,13 +177,13 @@ Power BI和关系型数据库中的关系之间，还有另一个重要区别是
 
 使用双向交叉筛选的一个特定场景是在处理多对多关系时。举个例子，假设一个包含客户（customer）和分支机构（branch office）的模型，如图2.8所示。每一个客户由一个或多个分支机构提供服务，反过来，每一个分支机构又服务于多个客户。
 
-![image-20220409152137832](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409152137832.png)
+![image-20220409173856911](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173856911.png)
 
 图2.8 客户和分支机构
 
 Customer 表和 Branch office 表都有唯一的键列，但它们都没有包含外键的列：每一行都必须关联到另一个表中的多行。解决此问题的方法是：使用一个包含所有客户键和分支机构键组合的中间表[[2\]](#_ftn2)，Branch office Customer 表。接下来，可以分别从中间表到 Customer 表和 Branch office 表创建关系，如图2.9所示。
 
-![image-20220409152144215](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409152144215.png)
+![image-20220409173904203](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173904203.png)
 
 图2.9 中间表
 
@@ -191,11 +191,11 @@ Customer 表和 Branch office 表都有唯一的键列，但它们都没有包�
 
 图2.10给出了解决方案：将两种关系都设置为双向的交叉筛选。此时，在 Customer 表中选择某一行时，左侧的关系将向右传递到中间表，右侧的关系再向右传递到 Branch office 表。反过来，在 Branch office 表中选择某一行时，关系会将所选内容传递到中间表，然后再将该选择传递到 Customer 表。
 
-![图形用户界面, 图示, 应用程序  描述已自动生成](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image021.jpg)
+![image-20220409173914811](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173914811.png)
 
 图2.10 通过中间表实现多对多关系
 
-| ![卡通人物  描述已自动生成](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image022.jpg) | 注意：当您将其中一个表（例如 Customer 表）与包含销售交易记录的表相关联时，此处会出现警告。对于每个销售交易记录，必须记录客户键。该设置允许选择一个客户，比如张三，并查看张三的总销售额。但是，我们无法查看张三在某个特定分支机构的销售额：如图2.11所示，随便选择一个分支机构，只要张三在这里消费过，那么我们只能获取他在所有分支机构中总的销售额。当您按分支机构报告总销售额时，张三的销售额将成为与之相关的每个分支机构销售额的一部分。  在这种情况下，使用中间表将这两个表关联在一起并不是一个很好的选择，通常，我们会将  Customer 表和 Branch office 表直接与销售表相关联，大部分时候，这是最佳实践。  ![img](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image024.jpg)  图2.11 在 Branch office Customer 表和 Customer 表以及  Branch office 表之间使用交叉筛选 |
+| ![image-20220409173923576](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173923576.png) | 注意：当您将其中一个表（例如 Customer 表）与包含销售交易记录的表相关联时，此处会出现警告。对于每个销售交易记录，必须记录客户键。该设置允许选择一个客户，比如张三，并查看张三的总销售额。但是，我们无法查看张三在某个特定分支机构的销售额：如图2.11所示，随便选择一个分支机构，只要张三在这里消费过，那么我们只能获取他在所有分支机构中总的销售额。当您按分支机构报告总销售额时，张三的销售额将成为与之相关的每个分支机构销售额的一部分。  在这种情况下，使用中间表将这两个表关联在一起并不是一个很好的选择，通常，我们会将  Customer 表和 Branch office 表直接与销售表相关联，大部分时候，这是最佳实践。  ![img](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image024.jpg)  图2.11 在 Branch office Customer 表和 Customer 表以及  Branch office 表之间使用交叉筛选 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
  
@@ -218,7 +218,7 @@ Customer 表和 Branch office 表都有唯一的键列，但它们都没有包�
 
 使用关系型数据库进行数据分析的最佳做法是使用一个特定的数据库结构，称为**星型结构**（star schema），如图2.12所示。星型结构的基本思想也适用于 Power BI 模型。
 
-![形状, 正方形  描述已自动生成](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image026.png)
+![image-20220409173934964](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173934964.png)
 
 图2.12 通用的星型架构的结构
 
@@ -230,7 +230,7 @@ Customer 表和 Branch office 表都有唯一的键列，但它们都没有包�
 
 在一个纯粹的星型结构模型中，筛选表之间没有任何关系。当筛选表与其他筛选表相关时，生成的模型结构称为**雪花结构**（snowflake），如图2.13所示。
 
-![形状, 正方形, 多边形  描述已自动生成](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image028.png)
+![image-20220409173943755](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173943755.png)
 
 图2.13 雪花结构
 
@@ -262,17 +262,17 @@ Customer 表和 Branch office 表都有唯一的键列，但它们都没有包�
 
 这在数据仓库中谈不上是什么问题，但在 Power BI 模型中还真是个问题。假设你有一个 Power BI 报表，其中包含细分市场和客户的切片器。用户理所当然地期望，当他们选择某个细分市场时，客户切片器将仅显示与所选细分市场相关的客户。换言之，您的模型需要将市场细分维度表上的筛选传递到客户表，反之亦然。使用具有单个交叉筛选器方向的默认一对多关系不会有这个效果，我们需要对关系启用双向交叉筛选，从而生成如图2.14所示的模型。
 
-![图片包含 形状  描述已自动生成](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image030.png)
+![image-20220409173954951](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409173954951.png)
 
 图2.14 相互依赖的维度之间需要双向的交叉筛选
 
 但是，当你试图添加第二个事实表时，你会发现这是一个非常不好的 Power BI 建模案例：之前的活跃关系总会有一些变得不活跃，而且不可避免。更好的设计方案是将属于一起的筛选器表进行聚类，并只允许其中一个表与事实表建立关系，并且设置为具有单个交叉筛选器方向。如果需要，可以使用双向交叉筛选器让几个筛选表实现集群（cluster），如图2.15所示。这样做的一大优点是可以省去事实数据表中的多个键列。
 
-![image-20220409152225357](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409152225357.png)
+![image-20220409174001721](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174001721.png)
 
 图2.15 筛选表集群
 
-| ![卡通人物  描述已自动生成](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image033.jpg) | 在本书中，我们使用筛选表（filter table）这一术语，而不是维度表（dimension table），原因有三个：首先，避免受到传统的关系型数据库建模的影响；其次，因为多个筛选表可能属于统一个集群，导致它们之间并不是独立的；第三，该名称对业务用户更有意义，并且能够更好地与 Power BI 中筛选器的核心概念保持一致。 |
+| ![image-20220409174007910](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174007910.png) | 在本书中，我们使用筛选表（filter table）这一术语，而不是维度表（dimension table），原因有三个：首先，避免受到传统的关系型数据库建模的影响；其次，因为多个筛选表可能属于统一个集群，导致它们之间并不是独立的；第三，该名称对业务用户更有意义，并且能够更好地与 Power BI 中筛选器的核心概念保持一致。 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
  
@@ -295,7 +295,7 @@ Customer 表和 Branch office 表都有唯一的键列，但它们都没有包�
 
  
 
-| ![卡通人物  描述已自动生成](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image034.jpg) | 有趣的是，有一种类似数据库的技术不仅能够通过数据，还能通过聚合逻辑进行通信：Power BI模型！  由于可以通过 DirectQuery 模式连接到 Power BI 数据集，因此可以将 Power BI 模型用作数据和聚合的中心，并从中派生其他模型。换句话说：如果存在单一信息来源，那么大概率会是 Power BI模型。 |
+| ![image-20220409174020112](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174020112.png) | 有趣的是，有一种类似数据库的技术不仅能够通过数据，还能通过聚合逻辑进行通信：Power BI模型！  由于可以通过 DirectQuery 模式连接到 Power BI 数据集，因此可以将 Power BI 模型用作数据和聚合的中心，并从中派生其他模型。换句话说：如果存在单一信息来源，那么大概率会是 Power BI模型。 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
  
@@ -308,13 +308,13 @@ Customer 表和 Branch office 表都有唯一的键列，但它们都没有包�
 
 对于多对多关系，另一个稍微有用一点的案例是将事实表与具有不同粒度的筛选表相关联。例如，您的模型包含一个 Product 表（产品表），其中包含对多个产品进行分组的 Category 列（类别列），销售记录可能存储在产品级别。目标或销售预测可以在产品类别这一级别上给出。Power BI 允许创建目标事实表与 Product 表 Category 列之间的多对多关系，如图2.16所示。
 
-![图形用户界面, 应用程序  描述已自动生成](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image036.jpg)
+![image-20220409174030269](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174030269.png)
 
 图2.16 使用多对多关系
 
 虽然这个模型可以正常地工作，但我们更喜欢如图2.17所展示的那样，使用包含 Category 唯一值的中间筛选表来实现。
 
-![图形用户界面, 应用程序  描述已自动生成](https://raw.githubusercontent.com/xueqiandata/picgo/main/clip_image038.jpg)
+![image-20220409174037854](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174037854.png)
 
 图2.17 使用中间表
 

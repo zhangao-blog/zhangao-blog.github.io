@@ -30,7 +30,7 @@
 
 为了在探讨商业智能数据分析时能够更加系统全面与条理清晰，我们开发了一个简单的框架，用来阐述一套数据分析方案的主要组成部分和的各部分的主要作用，如图1.1所示。我们给它起了一个同样简单的名字：**五层模型**。
 
-![image-20220409150936098](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409150936098.png)
+![image-20220409174132693](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174132693.png)
 
 图1.1 商业智能的五层模型
 
@@ -64,7 +64,7 @@ DAX 位于“建模分析”这一层，且与“数据预处理”和“可视�
 
 **Power BI**，作为微软的数据分析大杀器，其强大之处在于，将企业 BI 和最终用户 BI这两个矛盾的事物有机地结合在一起。Power BI的底层技术是实现这一目标的驱动力。正如图1.2所展示的那样，借助于Power BI，我们现在可以将企业BI和最终用户BI这两个以前对立的形式统筹到一个体系中，无论用户拥有哪种层次的自助分析能力。
 
- ![](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409150936098.png)
+![image-20220409174144030](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174144030.png)
 
 图1.2 企业级BI与最终用户BI的结合
 
@@ -104,8 +104,8 @@ SQL Server是微软的数据服务器平台，它包含一个名为Analysis Serv
 
 Azure Analysis Services （Azure分析服务，AAS） 是一种完全托管的数据分析云服务，与SSAS一样，基于Tabular引擎。显然，与SSAS的不同之处在于，AAS运行在云上，这样您的组织不必担心硬件和数据库的维护。而且它也是一个灵活的解决方案，因为存储和计算资源可以动态扩展以满足当下的需求。
 
-|      | 综上，在不同的工具里，含DAX的分析模型以诸多不同的名称存在：Power Pivot、Data Model、dataset 或 Tabular Model。  所以当我们在谈论到“分析模型”这一概念时，很容易产生混淆，这对本书来说是一个挑战。由于本书着重于Power BI，因此我们将在本书中使用**Power BI模型**这个术语，或者在不会产生混淆时直接简称为**模型**。并且，本书中的“分析模型”这一术语仅用来表示“五层模型”中的建模分析层。 |
-| ---- | ------------------------------------------------------------ |
+| ![image-20220409174155078](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174155078.png) | 综上，在不同的工具里，含DAX的分析模型以诸多不同的名称存在：Power Pivot、Data Model、dataset 或 Tabular Model。  所以当我们在谈论到“分析模型”这一概念时，很容易产生混淆，这对本书来说是一个挑战。由于本书着重于Power BI，因此我们将在本书中使用**Power BI模型**这个术语，或者在不会产生混淆时直接简称为**模型**。并且，本书中的“分析模型”这一术语仅用来表示“五层模型”中的建模分析层。 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
 
  
 
@@ -117,8 +117,8 @@ Azure Analysis Services （Azure分析服务，AAS） 是一种完全托管的�
 
 •   对于 Power BI 数据集，请使用 Power BI Desktop。
 
-|      | 有趣的是， Power BI Desktop 实际上有三个版本。一个是从 Power BI 网站下载。另一个是从 Windows 应用商店安装的，并且像应用商店中的任何其他应用一样自动更新。当你意识到 Power BI Desktop 几乎每个月都会发布新版本，那么自动更新肯定要方便一些，尽管有些时候新版本可能会更改一些令你意想不到的地方，确实会很烦人。如果需要，可以在同一台电脑上安装这两个版本。第三个版本的 Power BI Desktop（也可以从 Power BI 网站下载）是与 Power BI 报表服务器一起使用的特殊版本。 |
-| ---- | ------------------------------------------------------------ |
+| ![](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174155078.png) | 有趣的是， Power BI Desktop 实际上有三个版本。一个是从 Power BI 网站下载。另一个是从 Windows 应用商店安装的，并且像应用商店中的任何其他应用一样自动更新。当你意识到 Power BI Desktop 几乎每个月都会发布新版本，那么自动更新肯定要方便一些，尽管有些时候新版本可能会更改一些令你意想不到的地方，确实会很烦人。如果需要，可以在同一台电脑上安装这两个版本。第三个版本的 Power BI Desktop（也可以从 Power BI 网站下载）是与 Power BI 报表服务器一起使用的特殊版本。 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
 
  
 
@@ -136,13 +136,13 @@ Azure Analysis Services （Azure分析服务，AAS） 是一种完全托管的�
 
 创建可视化报告的目的是为了得到可靠的分析结论，并提供给使用者直接的见解与解决方案，而不仅仅是大量信息的罗列堆积。我们来看看图1.3展示的这个例子。
 
- ![image-20220409151250805](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409151250805.png)
+![image-20220409174206888](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174206888.png)
 
 图1.3 表中的部分销售数据
 
 你能一眼就发现这家公司存在的问题或者机遇吗？如果能，那么您对于数字一定十分敏感！然而，大多数人更习惯于视觉的直观感受。图1.4是同一组数据以柱状图的形式展示。
 
- ![image-20220409151258623](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409151258623.png)
+![image-20220409174214160](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174214160.png)
 
 图1.4 更直观地呈现相同的销售数据
 
@@ -152,7 +152,7 @@ Azure Analysis Services （Azure分析服务，AAS） 是一种完全托管的�
 
 如何解决这种影响？传统的方法是在一份报告中提供尽可能多的信息。原因很简单，提交一项报告需要花费不少时间。Power BI 却以一种完全不同的方式实现这一点，得益于DAX的强大功能，Power BI在报告报告中添加了交互功能，如图1.5所示。
 
- ![image-20220409151304059](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409151304059.png)
+![image-20220409174222530](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174222530.png)
 
 图1.5 可视化-交互周期
 
@@ -164,7 +164,7 @@ Azure Analysis Services （Azure分析服务，AAS） 是一种完全托管的�
 
 传统的由IT部门来牵头创建的BI解决方案，首先要着手准备连接到数据源并进行数据预处理。如图1.6所示的那样，循序渐进，没有任何问题。毕竟，如果想得到好的并且有价值的见解，高质量的数据是先决条件。
 
- ![image-20220409151311376](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409151311376.png)
+![image-20220409174233662](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174233662.png)
 
 图 1.6 传统的 BI 解决方案开发过程
 
@@ -182,7 +182,7 @@ Azure Analysis Services （Azure分析服务，AAS） 是一种完全托管的�
 
 在五层模型中，Power BI 不仅支持通过自下而上的方式进行开发，而且还支持通过自上而下的方式，图1.7很好地说明了这一点。
 
- ![image-20220409151319011](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409151319011.png)
+![image-20220409174242037](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174242037.png)
 
 图1.7 Power BI支持的解决方案开发方式
 
@@ -206,7 +206,7 @@ Azure Analysis Services （Azure分析服务，AAS） 是一种完全托管的�
 
 如图1.8所示，您可以通过多次迭代来将此方法变得正式一些，并在最后使用联合会话来显示原型并收集反馈。（我们喜欢称之为**业务设计会话**来突出它们的本质：它们不是反馈会议或演示，而是共同努力实现正确的结果。）取决于您的Power BI 和 DAX 技能，可能需要两天或更长时间来建立雏形。业务设计会话的结果将作为下一次迭代的输入。
 
- ![image-20220409151326530](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409151326530.png)
+![image-20220409174250032](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174250032.png)
 
 图 1.8 迭代需求捕获
 
@@ -232,7 +232,7 @@ Azure Analysis Services （Azure分析服务，AAS） 是一种完全托管的�
 
 这会产生一个**数字化转型循环**，或者叫数据驱动的业务改进循环，如图1.9所示。
 
- ![image-20220409151332529](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409151332529.png)
+![image-20220409174259416](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174259416.png)
 
 图1.9 数字化转型循环
 
@@ -242,7 +242,7 @@ Azure Analysis Services （Azure分析服务，AAS） 是一种完全托管的�
 
 如图1.10所示，Power Platform由Power BI和它旁边的三个主要组件构成。
 
- ![image-20220409151338009](https://raw.githubusercontent.com/xueqiandata/picgo/main/image-20220409151338009.png)
+![image-20220409174307421](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/image-20220409174307421.png)
 
 图1.10 Power Platform组成部分[[1\]](#_ftn1)
 

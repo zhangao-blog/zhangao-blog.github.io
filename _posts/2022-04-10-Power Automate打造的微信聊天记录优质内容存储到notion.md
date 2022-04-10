@@ -22,7 +22,9 @@ tags:
 
 此时，打开notion，20秒左右就会同步到这里，文字和图片、链接都可以实现，图片会慢一些（不知道为什么视频不能自动播放，可以右键选择新标签页打开播放）：
 
+<div class="video-wrap" v-show="isVideoShow" @click="handlePlayClick()">
 <video src="https://picgo-1301351990.cos.ap-beijing.myqcloud.com/%E8%A7%86%E9%A2%91/%E5%BE%AE%E4%BF%A1-notion2.mp4"></video>
+    </div>
 
 
 

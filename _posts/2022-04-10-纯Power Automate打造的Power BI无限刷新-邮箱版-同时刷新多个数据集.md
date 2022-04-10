@@ -3,10 +3,9 @@ layout:     post
 header-img: img/post-bg-parefreshpowerbi.jpg
 catalog: true
 tags:
-    - Extreme DAX
+    - PowerAutomate
+    - PowerBI
 ---
-
-
 
 公众号：PowerBI生命管理大师学谦，同步更新，敬请关注
 

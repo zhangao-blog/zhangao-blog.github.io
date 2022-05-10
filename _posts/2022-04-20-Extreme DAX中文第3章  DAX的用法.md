@@ -28,7 +28,7 @@ Power BI 模型的真正强大之处在于通过使用 DAX 语言进行计算。
 
 除此之外，我们还将讨论如何使用 DAX 创建日期表。本章最后总结了一些使用 DAX 的最佳实践。
 
-| ![卡通人物  描述已自动生成](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/clip_image002.jpg) | 本章附带一个带有示例的 PBIX 文件。 1.3 Using DAX.pbix 可以从以下链接下载：https://github.com/PacktPublishing/Extreme-DAX/tree/main/Chapter1.3 |
+| ![卡通人物  描述已自动生成](https://picgo-1301351990.cos.ap-beijing.myqcloud.com/markdown/clip_image002.jpg) | 本章附带一个带有示例的 PBIX 文件。如需下载请关注公众号：PowerBI生命管理大师学谦，回复关键字“dax”。 |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
  

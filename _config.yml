@@ -1,29 +1,27 @@
 # Site settings
-title: Ao Zhang's Blog
-SEOTitle: 张傲的博客 | ZA Blog
+title: 学谦PowerBI
+SEOTitle: 学谦PowerBI
 header-img: img/post-bg-desk.jpg
-email: zhangao1220@gmail.com
+email: xueqian@powerbipro.cn
 description: "Every failure is leading towards success."
-keyword: "ZA, ZA Blog, 张傲的博客, zhangao, 张傲, iOS, Apple, iPhone"
-url: "http://zhangao-blog.github.io"          # your host, for absolute URL
+keyword: "学谦, 学谦 Blog, 学谦的博客, xueqian, 陈学谦, iOS, Apple, iPhone"
+url: "http://powerbipro.cn/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/zhangao-blog/zhangao-blog.github.io" # you code repository
+github_repo: "https://github.com/xueqiandata/xueqiandata.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
-sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "满招损，谦受益！"
+sidebar-avatar: /img/about-学谦.png      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
 # SNS settings
 RSS: false
-# weibo_username:     zhangao-blog
-zhihu_username:     zhangao-blog
-github_username:    zhangao-blog
-facebook_username:  zhangao-blog
-jianshu_username:   zhangao-blog
-#twitter_username:   qiubaiying
+# weibo_username:     xueqiandata
+zhihu_username:     xueqiandata
+github_username:    xueqiandata
+#twitter_username:   xueqiandata
 
 
 
@@ -57,16 +55,16 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-# disqus_username: zhangao-blog
+# disqus_username: xueqiandata
 
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: f2c84e7629bb1446c1a4                            #生成的clientID
-  clientSecret: ca6d6139d1e1b8c43f8b2e19492ddcac8b322d0d    #生成的clientSecret
-  repo: zhangao-blog.github.io    #仓库名称
-  owner: zhangao-blog    #github用户名
-  admin: zhangao-blog
+  clientID: 14a053a5e3f367d2e515                            #生成的clientID
+  clientSecret: 350401a27d8a01c2c5a657242449692fd592d42a    #生成的clientSecret
+  repo: xueqiandata.github.io    #仓库名称
+  owner: xueqiandata    #github用户名
+  admin: xueqiandata
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
@@ -74,11 +72,11 @@ gitalk:
 
 # Analytics settings
 # Baidu Analytics
-# ba_track_id: b50bf2b12b5338a1845e33832976fd68
+ba_track_id: b50bf2b12b5338a1845e33832976fd68
 
 # Google Analytics
-# ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
-# ga_domain: auto               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
+ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 
 
@@ -99,11 +97,11 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
+        title: "公众号·学谦",
+        href: "https://mp.weixin.qq.com/s/OrDqdlriIMkNZ_GzYUS92w"
     },{
-        title: "简书·BY",
-        href: "http://www.jianshu.com/u/e71990ada2fd"
+        title: "知乎·学谦",
+        href: "https://www.zhihu.com/people/xueqiandata"
     },{
         title: "Apple",
         href: "https://apple.com"

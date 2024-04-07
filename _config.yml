@@ -2,12 +2,12 @@
 title: Ao Zhang's Blog
 SEOTitle: 张傲的博客 | ZA Blog
 header-img: img/post-bg-desk.jpg
-email: qiubaiying@gmail.com
+email: zhangao1220@gmail.com
 description: "Every failure is leading towards success."
 keyword: "ZA, ZA Blog, 张傲的博客, zhangao, 张傲, iOS, Apple, iPhone"
 url: "http://zhangao-blog.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/zhangao-blog/zhangao-blog.github.io.git" # you code repository
+github_repo: "https://github.com/zhangao-blog/zhangao-blog.github.io" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.

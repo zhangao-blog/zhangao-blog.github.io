@@ -1,7 +1,7 @@
 # Site settings
 title: Ao Zhang's Blog
 SEOTitle: 张傲的博客 | ZA Blog
-header-img: img/head-0707.jpg
+header-img: img/head-07072.jpg
 email: zhangao1220@gmail.com
 description: "Every failure is leading towards success."
 keyword: "ZA, ZA Blog, 张傲的博客, zhangao, 张傲, iOS, Apple, iPhone"
@@ -97,7 +97,7 @@ service-worker: true
 
 
 # Links
-friends: [
+Links: [
     {
         title: "Group",
         href: "http://182.92.109.163/"

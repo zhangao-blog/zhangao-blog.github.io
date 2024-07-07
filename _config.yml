@@ -97,7 +97,7 @@ service-worker: true
 
 
 # Links
-Links: [
+Friends: [
     {
         title: "Group",
         href: "http://182.92.109.163/"

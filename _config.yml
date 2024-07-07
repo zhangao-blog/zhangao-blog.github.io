@@ -1,7 +1,7 @@
 # Site settings
 title: Ao Zhang's Blog
 SEOTitle: 张傲的博客 | ZA Blog
-header-img: img/post-bg-desk.jpg
+header-img: img/head-0707.jpg
 email: zhangao1220@gmail.com
 description: "Every failure is leading towards success."
 keyword: "ZA, ZA Blog, 张傲的博客, zhangao, 张傲, iOS, Apple, iPhone"
@@ -19,10 +19,10 @@ sidebar-avatar: /img/about-ZA-gentle.jpg      # use absolute URL, seeing it's us
 # SNS settings
 RSS: false
 # weibo_username:     zhangao-blog
-zhihu_username:     zhangao-blog
-github_username:    zhangao-blog
-facebook_username:  zhangao-blog
-jianshu_username:   zhangao-blog
+# zhihu_username:     zhangao-blog
+# github_username:    zhangao-blog
+# facebook_username:  zhangao-blog
+# jianshu_username:   zhangao-blog
 #twitter_username:   qiubaiying
 
 
@@ -96,19 +96,16 @@ service-worker: true
 
 
 
-# Friends
+# Links
 friends: [
     {
-        title: "WY",
-        href: "http://zhengwuyang.com"
+        title: "Group",
+        href: "http://182.92.109.163/"
     },{
-        title: "简书·BY",
+        title: "天池·TC",
         href: "http://www.jianshu.com/u/e71990ada2fd"
     },{
-        title: "Apple",
-        href: "https://apple.com"
-    },{
-        title: "Apple Developer",
-        href: "https://developer.apple.com/"
+        title: "Kaggle",
+        href: "https://www.kaggle.com/competitions"
     }
 ]

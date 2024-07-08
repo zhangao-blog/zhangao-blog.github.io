@@ -1,0 +1,75 @@
+
+---
+layout:     post
+title:      0708算法 - 哈希表01
+subtitle:   242.字母异位词 | 349.数组交集 | 202.快乐数| 1.两数之和
+date:       2024-07-08
+author:     ZA
+header-img: img/algorithm.png
+catalog: true
+tags:
+    - 算法笔记
+    - 链表
+---
+
+## 前言
+
+xxx
+
+## 203.移除链表元素
+
+给你一个链表的头节点 `head` 和一个整数 `val` ，请你删除链表中所有满足 `Node.val == val` 的节点，并返回 **新的头节点** 。
+
+- https://leetcode.cn/problems/remove-linked-list-elements/description/
+
+### 难点
+
+- A
+- B
+
+### 代码实现
+
+```C++
+
+```
+
+## 203.移除链表元素
+
+给你一个链表的头节点 `head` 和一个整数 `val` ，请你删除链表中所有满足 `Node.val == val` 的节点，并返回 **新的头节点** 。
+
+- https://leetcode.cn/problems/remove-linked-list-elements/description/
+
+### 难点
+
+- A
+- B
+
+### 代码实现
+
+```C++
+
+```
+
+## 203.移除链表元素
+
+给你一个链表的头节点 `head` 和一个整数 `val` ，请你删除链表中所有满足 `Node.val == val` 的节点，并返回 **新的头节点** 。
+
+- https://leetcode.cn/problems/remove-linked-list-elements/description/
+
+### 难点
+
+- A
+- B
+
+### 代码实现
+
+```C++
+
+```
+
+### 参考
+
+- 代码随想录：[https://www.programmercarl.com/](https://www.programmercarl.com/)
+- OI Wiki：[https://oi-wiki.org/ds/](https://oi-wiki.org/ds/)
+- [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+
